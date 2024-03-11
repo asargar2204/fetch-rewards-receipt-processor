@@ -21,26 +21,29 @@ To get a local copy up and running follow these simple steps.
    ```sh
       git clone <repository-url>
 
-2 Navigate to the project directory
+2 Navigate to the project directory with cd
 
-cd <project-directory>
 3 Install NPM packages
+   ```sh
       npm install --save
 
 4 Running the Application
 
 a) Without Docker
 To start the application, run the following command in your terminal:
+   ```sh
          npm start
 This will start the server on localhost:3000, or another port if specified in your environment variables.
 
 b) With Docker
 If you prefer to use Docker, ensure you have Docker installed and running on your machine. Then, build and run the application using Docker with the following commands:
 
-Build the Docker image: 
+Build the Docker image:
+```sh
       docker build -t <image-name> . 
 
-Run the application in a Docker container: 
+Run the application in a Docker container:
+```sh
       docker run -p 3000:3000 -d <image-name>
 
 This will also start the server on localhost:3000.
