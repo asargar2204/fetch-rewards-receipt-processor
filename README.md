@@ -49,4 +49,4 @@ Note - please make sure to put the id which you got after the post request and n
 ## Contact
 Your Name - Adtya Namdeo Sarhar
 
-Project Link: https://github.com/your_username/receipt-processor
+Project Link: https://github.com/asargar2204/fetch-rewards-receipt-processor
