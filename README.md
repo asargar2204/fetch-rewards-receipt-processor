@@ -19,40 +19,37 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone <repository-url>
+      git clone <repository-url>
 
 2 Navigate to the project directory
 
 cd <project-directory>
-Install NPM packages
-
-
-3 npm install --save
+3 Install NPM packages
+      npm install --save
 
 4 Running the Application
-   a) Without Docker
+
+a) Without Docker
 To start the application, run the following command in your terminal:
-
-
-
-npm start
+         npm start
 This will start the server on localhost:3000, or another port if specified in your environment variables.
 
-     b) With Docker
+b) With Docker
 If you prefer to use Docker, ensure you have Docker installed and running on your machine. Then, build and run the application using Docker with the following commands:
 
 Build the Docker image: 
-docker build -t <image-name> . 
+      docker build -t <image-name> . 
 
 Run the application in a Docker container: 
-docker run -p 3000:3000 -d <image-name>
+      docker run -p 3000:3000 -d <image-name>
 
 This will also start the server on localhost:3000.
 
 ## Usage
-After starting the application, you can post JSON content to the API to process receipts and assign points. To retrieve the points, make a GET request to the appropriate endpoint.
+After starting the application, you can go to the postman and make the request POST and paste "localhost:3000/receipts/process" with json body in the body field and make raw and also change it to JSON.It will produce an id.
+To get the points , in postman make the request GET and paste "localhost:3000/receipts/e32eaff7-5b4e-4cd6-9d5f-37b7f2597c8f/points" please make sure to put the id which you got after the post request this is for example
 
-For specific API usage and endpoints, please refer to the project's API documentation (add a link to your API documentation here, if available).
+
 
 
 ## Contact
